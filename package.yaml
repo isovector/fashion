@@ -21,28 +21,11 @@ description:         Please see the README on GitHub at <https://github.com/isov
 
 dependencies:
 - base >= 4.7 && < 5
+- diagrams
+- diagrams-svg
+- diagrams-lib
+- diagrams-contrib
+- suavemente
 
 library:
   source-dirs: src
-
-executables:
-  fashion-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - fashion
-
-tests:
-  fashion-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - fashion
