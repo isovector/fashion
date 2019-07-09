@@ -28,5 +28,17 @@ dependencies:
 - diagrams-contrib
 - suavemente
 
+ghc-options:
+  - -Wall
+  - -fno-warn-missing-signatures
+  - -fno-warn-type-defaults
+
+default-extensions:
+  - TypeApplications
+  - NoMonomorphismRestriction
+  - GADTs
+  - FlexibleContexts
+  - ViewPatterns
+
 library:
   source-dirs: src
