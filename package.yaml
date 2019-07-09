@@ -23,6 +23,7 @@ dependencies:
 - base >= 4.7 && < 5
 - diagrams
 - diagrams-svg
+- diagrams-core >= 1.1.0.3
 - diagrams-lib
 - diagrams-contrib
 - suavemente
