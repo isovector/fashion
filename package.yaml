@@ -26,6 +26,7 @@ dependencies:
 - diagrams-core >= 1.1.0.3
 - diagrams-lib
 - diagrams-contrib
+- diagrams-rasterific
 - suavemente
 
 ghc-options:

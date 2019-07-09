@@ -30,5 +30,5 @@ oneHalton b ix = runST $ do
 halton :: Int -> Int -> [V2 Double]
 halton x y = drop 1 $ do
   i <- [0..]
-  pure $ (oneHalton x i - 0.5) ^& (oneHalton y i - 0.5)
+  pure $ subtract 0.5 $ (oneHalton x i) ^& (oneHalton y i)
 
