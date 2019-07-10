@@ -22,7 +22,7 @@ description:         Please see the README on GitHub at <https://github.com/isov
 dependencies:
 - base >= 4.7 && < 5
 - diagrams
-- diagrams-svg
+- diagrams-cairo
 - diagrams-core >= 1.1.0.3
 - diagrams-lib
 - diagrams-contrib
@@ -42,14 +42,14 @@ default-extensions:
 library:
   source-dirs: src
 
-executables:
- exe:
-   main:                Main.hs
-   source-dirs:         app
-   ghc-options:
-   - -threaded
-   - -rtsopts
-   - -with-rtsopts=-N
-   dependencies:
-   - fashion
+# executables:
+#  exe:
+#    main:                Main.hs
+#    source-dirs:         app
+#    ghc-options:
+#    - -threaded
+#    - -rtsopts
+#    - -with-rtsopts=-N
+#    dependencies:
+#    - fashion
 
